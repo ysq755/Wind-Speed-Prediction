@@ -1,4 +1,6 @@
-# Wind-Speed-Prediction (风速预测)
+# Wind-Speed-Prediction (风速预测)![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-red)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 ## 📖 项目简介
 本项目依托大连海洋大学信息工程学院，旨在基于多变量气象数据（风速、温度、湿度、气压等），利用时间序列预测与大模型技术，对海洋/沿海地区风速进行精准预测。
