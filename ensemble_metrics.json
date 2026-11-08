@@ -1,0 +1,108 @@
+{
+  "weights": {
+    "iTransformer": 0.23529586912044467,
+    "PatchTST": 0.0,
+    "TimesNet": 0.0012121859695270049,
+    "LSTM": 0.0,
+    "Transformer": 0.7634919449100283
+  },
+  "validation": {
+    "single_models": {
+      "iTransformer": {
+        "MSE": 0.22350779400678014,
+        "MAE": 0.26850652931238506,
+        "R2": 0.7465870901410585
+      },
+      "PatchTST": {
+        "MSE": 0.25675340149145826,
+        "MAE": 0.3040083481398986,
+        "R2": 0.7052757595570444
+      },
+      "TimesNet": {
+        "MSE": 0.27157815977950045,
+        "MAE": 0.34098072647530997,
+        "R2": 0.6803205396428855
+      },
+      "LSTM": {
+        "MSE": 0.4890768610298715,
+        "MAE": 0.4940510637954705,
+        "R2": 0.4079581326868947
+      },
+      "Transformer": {
+        "MSE": 0.1847564013642018,
+        "MAE": 0.2587802552879584,
+        "R2": 0.7896343319139532
+      }
+    },
+    "ensemble": {
+      "MSE": 0.18066671853480473,
+      "MAE": 0.24920544663737845,
+      "R2": 0.7957841145457866
+    }
+  },
+  "test": {
+    "single_models": {
+      "iTransformer": {
+        "MSE": 0.25852433589600665,
+        "MAE": 0.27499621596383755,
+        "R2": 0.6977168192924524
+      },
+      "PatchTST": {
+        "MSE": 0.2607448562531827,
+        "MAE": 0.29062524675081874,
+        "R2": 0.6883391714849818
+      },
+      "TimesNet": {
+        "MSE": 0.2772343872240753,
+        "MAE": 0.3253221981914099,
+        "R2": 0.65257704430838
+      },
+      "LSTM": {
+        "MSE": 0.3219430917463944,
+        "MAE": 0.38306669147811173,
+        "R2": 0.5716706893388811
+      },
+      "Transformer": {
+        "MSE": 0.22522315912785484,
+        "MAE": 0.2780653077509615,
+        "R2": 0.728621693795418
+      }
+    },
+    "ensemble": {
+      "MSE": 0.22109462726302884,
+      "MAE": 0.2668249141970651,
+      "R2": 0.7381463464083889
+    },
+    "equal_weight": {
+      "MSE": 0.22506592302828374,
+      "MAE": 0.2757080612809398,
+      "R2": 0.7287965841197034
+    }
+  },
+  "baseline_selected_on_validation": "Transformer",
+  "validation_shape": [
+    222,
+    1,
+    6
+  ],
+  "test_shape": [
+    441,
+    1,
+    6
+  ],
+  "sources": {
+    "iTransformer": "D:\\PyCharm_TSL\\Time-Series-Library-main\\results\\long_term_forecast_data_top5_iTransformer_iTransformer_custom_ftM_sl24_ll12_pl1_dm512_nh8_el2_dl1_df2048_expand2_dc4_fc1_ebtimeF_dtTrue_test_0",
+    "PatchTST": "D:\\PyCharm_TSL\\Time-Series-Library-main\\results\\long_term_forecast_data_top5_PatchTST_PatchTST_custom_ftM_sl24_ll12_pl1_dm64_nh8_el2_dl1_df128_expand2_dc4_fc1_ebtimeF_dtTrue_test_0",
+    "TimesNet": "D:\\PyCharm_TSL\\Time-Series-Library-main\\results\\long_term_forecast_data_top5_TimesNet_TimesNet_custom_ftM_sl24_ll12_pl1_dm64_nh8_el2_dl1_df128_expand2_dc4_fc1_ebtimeF_dtTrue_test_0",
+    "LSTM": "D:\\PyCharm_TSL\\Time-Series-Library-main\\results\\long_term_forecast_data_top5_LSTM_norm_LSTM_custom_ftM_sl24_ll12_pl1_dm512_nh8_el2_dl1_df2048_expand2_dc4_fc1_ebtimeF_dtTrue_test_0",
+    "Transformer": "D:\\PyCharm_TSL\\Time-Series-Library-main\\results\\long_term_forecast_data_top5_Transformer_norm_Transformer_custom_ftM_sl24_ll12_pl1_dm512_nh8_el2_dl1_df2048_expand2_dc4_fc1_ebtimeF_dtTrue_test_0"
+  },
+  "protocol": "Fit and baseline selection: validation only; frozen weights evaluated on test.",
+  "scale": "Saved arrays scale; no inverse transformation",
+  "r2_aggregation": "Uniform average across features",
+  "optimizer": {
+    "method": "SLSQP",
+    "success": true,
+    "message": "Optimization terminated successfully"
+  }
+}
